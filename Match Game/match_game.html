@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Game</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <h1>Welcome to my Match Game</h1>
+      <p>
+        How To Play: Click on two images to reveal them, if they match they stay
+        revealed. Each click will up your score by 1.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo2.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo7.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo6.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo8.jpg" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo4.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo8.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo1.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo2.jpg" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo7.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo3.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo4.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo1.jpg" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo6.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo5.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo3.jpg" />
+      </div>
+      <div class="card" onclick="onCardClicked(event);">
+        <img src="images/hidden_icon.jpg" data-real="images/bloom_photo5.jpg" />
+      </div>
+    </div>
+
+    <div class="score">
+      <p>Score: <span id="score">0</span></p>
+      <button onclick="reset();">Reset Game</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
