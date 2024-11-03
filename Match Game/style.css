@@ -1,6 +1,27 @@
 .container {
   text-align: center;
 }
+p {
+  font-size: x-large;
+  color: brown;
+  font-style: italic;
+  text-shadow: 2px 2px 4px orange;
+}
+
+button {
+  font-size: x-large;
+  border: 2px, solid transparent;
+  color: black;
+  padding: 15xp, 32px;
+  text-align: center;
+  background-color: orange;
+  padding: 10px, 20px;
+  cursor: pointer;
+}
+button:hover {
+  border: 2px solid black;
+  padding: 10px, 20px;
+}
 
 body {
   background-color: rgb(196, 166, 111);

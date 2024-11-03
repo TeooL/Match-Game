@@ -26,7 +26,7 @@ const onCardClicked = (event) => {
 
   setTimeout(() => {
     checkWin();
-  });
+  }, 500);
 };
 
 function reset() {
@@ -59,9 +59,8 @@ function checkMatch() {
       }, 1000);
 }
 
-function checkWin() {
-  console.log(matched_pairs);
+const checkWin = () => {
   if (matched_pairs === 8) {
     alert(`You won! Your final score is ${score}`);
   }
-}
+};
